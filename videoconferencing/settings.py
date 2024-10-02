@@ -41,6 +41,12 @@ INSTALLED_APPS = [
     'videoconference_app',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://videoconference-django-and-zegocloud.onrender.com',
+    'http://localhost:8000',  # if testing locally
+]
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
